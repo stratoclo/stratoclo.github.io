@@ -4,98 +4,90 @@ title: "Stratoclo"
 permalink: /
 ---
 
-# Stratoclo
+<div class="py-5">
+  <div class="p-4 p-md-5 mb-5 rounded shadow-sm" style="background:#ffd235;">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1 class="display-5 mb-3">AgentSOC — The AI Tier‑1 SOC Analyst</h1>
+        <p class="lead mb-4">Fully agentic AI that investigates alerts end-to-end, correlates evidence, and executes remediation—across Splunk, Sentinel, Cortex XDR, Cisco XDR, and more.</p>
+        <a class="btn btn-dark btn-lg" href="mailto:founder@stratoclo.com">Book a demo</a>
+      </div>
+      <div class="col-lg-5 text-center">
+        <img src="/assets/images/intro.svg" alt="Incident workflow illustration" class="img-fluid" style="max-height:280px;">
+      </div>
+    </div>
+  </div>
 
-Agentic AI for security teams.  
-Turn noisy alerts into clear, actionable incident stories.
-
----
-
-## What is Stratoclo?
-
-Stratoclo is a security co-pilot that works alongside your existing tools. It:
-
-- Ingests alerts, logs, and context from multiple sources  
-- Normalizes and correlates them into a single incident timeline  
-- Provides clear explanations of attacker behavior  
-- Recommends next actions based on the evidence  
-
-It operates like a virtual Tier-1 and Tier-2 SOC analyst.
-
----
-
-## Product Demo — What You Will See
-
-The demo walks through a realistic multi-alert incident.
-
-1. **Ingest**  
-   Stratoclo collects alerts from endpoint, network, identity, and cloud tools, then automatically groups them into a single incident.
-
-2. **Enrich**  
-   Hostnames, users, IPs, hashes, and file paths are enriched with threat intelligence and internal context.  
-   The result is a unified and chronological incident timeline.
-
-3. **Explain**  
-   Stratoclo produces a written summary explaining what happened, which systems are affected, and why the event matters.
-
-4. **Recommend**  
-   The system identifies practical next steps:  
-   what to block, isolate, investigate further, or close as low-risk.
-
-5. **Collaborate**  
-   Shareable summaries are produced for tickets and team communication platforms.  
-   Executive-level and technical summaries are both generated.
-
----
-
-## Why Stratoclo?
-
-- Reduces alert fatigue by grouping related signals into fewer, higher-quality incidents  
-- Accelerates triage and investigation  
-- Helps less experienced analysts ramp up quickly  
-- Works with existing SIEM, XDR, and logging platforms  
-- Does not require replacing any of your current tools  
-
----
-
-## Who Is This For?
-
-- MSSPs and MDR providers  
-- Enterprise SOC teams  
-- Security engineers at growing startups  
-- Builders exploring agentic-AI-driven security operations  
-
----
-
-## How the Demo Works
-
-In the interactive demo, you will:
-
-- Provide a small set of alerts or logs  
-- Allow Stratoclo to automatically build the incident storyline  
-- Ask questions in natural language such as:  
-  “How did the attacker get in?”  
-  “Which accounts are involved?”  
-  “What should be done next?”
-
-This is an early-stage prototype focused on workflow design, investigation quality, and AI-driven reasoning.
-
----
-
-## Roadmap
-
-- Deeper integrations with major SIEM, XDR, and ticketing platforms  
-- Expanded agentic AI investigation playbooks  
-- Incident trend analysis and reporting capabilities  
-- Enterprise-grade access controls, auditing, and data handling  
-
----
-
-## Stay in the Loop
-
-If you would like access to the demo or want to provide feedback:
-
-- Email: founder@stratoclo.com  
-- GitHub: https://github.com/stratoclo
-
-We welcome input from SOC teams, security engineers, and early adopters who are interested in improving security operations through agentic AI.
+  <div class="row gx-4 gy-4">
+    <div class="col-12">
+      <div class="row g-4">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm text-white mt-2 mb-3" style="background:#47b981;">
+            <div class="card-body py-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="/assets/images/1.jpg" alt="Green device" class="rounded" style="width:72px;height:72px;object-fit:cover;">
+              </div>
+              <h5 class="card-title">Ingest any SIEM/XDR</h5>
+              <p class="card-text">Pull alerts from Splunk, Sentinel, Cortex XDR, Cisco XDR, or any SIEM/XDR via webhook or API.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm text-white mt-2 mb-3" style="background:#1fb0e6;">
+            <div class="card-body py-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="/assets/images/2.jpg" alt="Blue TV" class="rounded" style="width:72px;height:72px;object-fit:cover;">
+              </div>
+              <h5 class="card-title">Agentic investigations</h5>
+              <p class="card-text">Multiple AI agents enrich alerts, pull related logs, and correlate user, device, and IP behavior.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm text-white mt-2 mb-3" style="background:#76499c;">
+            <div class="card-body py-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="/assets/images/3.jpg" alt="Purple e-commerce" class="rounded" style="width:72px;height:72px;object-fit:cover;">
+              </div>
+              <h5 class="card-title">MITRE ATT&CK mapping</h5>
+              <p class="card-text">Auto-map behaviors to ATT&CK techniques, determine severity, and generate a clear timeline.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm text-white mt-2 mb-3" style="background:#27c1aa;">
+            <div class="card-body py-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="/assets/images/4.jpg" alt="Teal beverages" class="rounded" style="width:72px;height:72px;object-fit:cover;">
+              </div>
+              <h5 class="card-title">Actionable remediation</h5>
+              <p class="card-text">Recommend or execute: block IPs, isolate endpoints, disable users, update firewalls, and open SOC tickets.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm text-white mt-2 mb-3" style="background:#f0b91a;">
+            <div class="card-body py-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="/assets/images/5.jpg" alt="Orange analytics" class="rounded" style="width:72px;height:72px;object-fit:cover;">
+              </div>
+              <h5 class="card-title">Incident reporting</h5>
+              <p class="card-text">Produce ready-to-ship reports for PDF, Slack, Email, Jira, or ServiceNow—complete with rationale.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm text-white mt-2 mb-3" style="background:#e97860;">
+            <div class="card-body py-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="/assets/images/6.jpg" alt="Red content" class="rounded" style="width:72px;height:72px;object-fit:cover;">
+              </div>
+              <h5 class="card-title">Human-in-the-loop</h5>
+              <p class="card-text">Operate with approvals or auto-mode. Every action is justified and logged for auditability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

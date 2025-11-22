@@ -4,14 +4,19 @@ url: "https://stratoclo.github.io"
 
 # Use a GitHub Pages-compatible remote theme
 # You can swap 'cayman' for: minimal, hacker, slate, etc.
-remote_theme: pages-themes/cayman@v0.2.0
+# remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: codebygina/affiliates-jekyll-theme
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-seo-tag
 
 # Basic options
 markdown: kramdown
 theme: null
 
-author: Stratoclo
+paginate: 6
+paginate_path: "/page:num/"
 
+author: Stratoclo
