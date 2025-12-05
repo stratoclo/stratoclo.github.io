@@ -91,3 +91,25 @@ permalink: /
     </div>
   </div>
 </div>
+
+<div class="py-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="mb-0">Latest posts</h2>
+    <a class="btn btn-outline-dark btn-sm" href="/blog/">View all</a>
+  </div>
+  <div class="row g-4">
+    {% assign recent_posts = site.posts | slice: 0, 4 %}
+    {% for post in recent_posts %}
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body py-4">
+          <p class="text-uppercase text-muted small mb-2">{{ post.date | date: "%b %d, %Y" }}</p>
+          <h5 class="card-title"><a class="text-dark" href="{{ post.url }}">{{ post.title }}</a></h5>
+          <p class="card-text text-muted">{{ post.excerpt | strip_html | truncate: 110 }}</p>
+          <a class="text-primary small" href="{{ post.url }}">Read more →</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
