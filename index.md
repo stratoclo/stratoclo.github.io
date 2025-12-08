@@ -6,7 +6,7 @@ permalink: /
 
 <style>
   .ai-hero {
-    background: radial-gradient(circle at 15% 20%, rgba(110, 163, 255, 0.55), transparent 65%), radial-gradient(circle at 80% 0%, rgba(66, 221, 195, 0.45), transparent 55%), linear-gradient(135deg, #1a2e60, #0b1430 40%, #122345);
+    background: radial-gradient(circle at 12% 25%, rgba(162, 197, 255, 0.75), transparent 70%), radial-gradient(circle at 78% 5%, rgba(66, 221, 195, 0.45), transparent 55%), linear-gradient(135deg, #253f78, #0b1430 45%, #122345);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 32px;
     color: #f7fbff;
@@ -47,48 +47,86 @@ permalink: /
   .ai-feature-card {
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.07);
-    background: rgba(3, 7, 23, 0.9);
-    box-shadow: 0 15px 45px rgba(5, 9, 26, 0.4);
-    color: #e7ecff;
+    background: rgba(6, 12, 32, 0.75);
+    box-shadow: 0 20px 50px rgba(5, 9, 26, 0.35);
+    color: #f5f7ff;
     height: 100%;
     margin-bottom: 1.5rem;
-  }
-
-  .ai-feature-card img {
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .ai-feature-card .feature-meta {
     gap: 1rem;
   }
 
-  .ai-feature-card .feature-meta img {
-    margin-right: 0.5rem;
+  .feature-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 12px 28px rgba(10, 10, 10, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .feature-icon svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .feature-icon[data-tone="cyan"] {
+    background: linear-gradient(135deg, #2f6fff, #49f0c6);
+    color: #e4fbff;
+  }
+
+  .feature-icon[data-tone="blue"] {
+    background: linear-gradient(135deg, #2941c7, #1e7bf6);
+    color: #dce5ff;
+  }
+
+  .feature-icon[data-tone="violet"] {
+    background: linear-gradient(135deg, #5d1fb6, #9c3bff);
+    color: #f4e7ff;
+  }
+
+  .feature-icon[data-tone="mint"] {
+    background: linear-gradient(135deg, #0c6255, #24d1aa);
+    color: #edfff9;
+  }
+
+  .feature-icon[data-tone="amber"] {
+    background: linear-gradient(135deg, #7a4306, #ffb347);
+    color: #fff8ee;
+  }
+
+  .feature-icon[data-tone="rose"] {
+    background: linear-gradient(135deg, #6b1334, #ff5e8a);
+    color: #ffeef5;
   }
 
   .ai-feature-card[data-accent="cyan"] {
-    background: linear-gradient(140deg, rgba(16, 53, 105, 0.9), rgba(22, 112, 138, 0.9));
+    background: linear-gradient(140deg, rgba(40, 104, 206, 0.92), rgba(69, 212, 215, 0.9));
   }
 
   .ai-feature-card[data-accent="violet"] {
-    background: linear-gradient(140deg, rgba(30, 21, 56, 0.95), rgba(79, 54, 170, 0.85));
+    background: linear-gradient(140deg, rgba(73, 51, 140, 0.94), rgba(151, 92, 219, 0.88));
   }
 
   .ai-feature-card[data-accent="amber"] {
-    background: linear-gradient(140deg, rgba(54, 36, 7, 0.95), rgba(160, 111, 10, 0.8));
+    background: linear-gradient(140deg, rgba(143, 93, 18, 0.92), rgba(242, 177, 73, 0.88));
   }
 
   .ai-feature-card[data-accent="mint"] {
-    background: linear-gradient(140deg, rgba(11, 39, 35, 0.95), rgba(24, 109, 93, 0.85));
+    background: linear-gradient(140deg, rgba(28, 92, 80, 0.92), rgba(62, 198, 166, 0.88));
   }
 
   .ai-feature-card[data-accent="blue"] {
-    background: linear-gradient(140deg, rgba(12, 35, 71, 0.95), rgba(20, 60, 135, 0.85));
+    background: linear-gradient(140deg, rgba(34, 66, 158, 0.94), rgba(64, 134, 236, 0.88));
   }
 
   .ai-feature-card[data-accent="rose"] {
-    background: linear-gradient(140deg, rgba(52, 5, 21, 0.95), rgba(142, 37, 74, 0.85));
+    background: linear-gradient(140deg, rgba(128, 34, 63, 0.94), rgba(219, 91, 132, 0.88));
   }
 
   .ai-section-title {
@@ -176,7 +214,15 @@ permalink: /
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="cyan">
           <div class="d-flex align-items-center mb-3 feature-meta">
-            <img src="/assets/images/1.jpg" alt="SIEM sources" style="width:68px;height:68px;object-fit:cover;">
+            <div class="feature-icon" data-tone="cyan">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="9" y="10" width="22" height="6" rx="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 16v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M15 22l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 30h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 34h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Ingest</p>
               <h5 class="mb-0">Connect every telemetry stream</h5>
@@ -188,7 +234,16 @@ permalink: /
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="blue">
           <div class="d-flex align-items-center mb-3 feature-meta">
-            <img src="/assets/images/2.jpg" alt="AI investigations" style="width:68px;height:68px;object-fit:cover;">
+            <div class="feature-icon" data-tone="blue">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="8" stroke="currentColor" stroke-width="2"/>
+                <path d="M24 24l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M18 12v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 18h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M18 24v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M24 18h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Investigate</p>
               <h5 class="mb-0">Autonomous case building</h5>
@@ -200,7 +255,15 @@ permalink: /
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="violet">
           <div class="d-flex align-items-center mb-3 feature-meta">
-            <img src="/assets/images/3.jpg" alt="ATT&CK mapping" style="width:68px;height:68px;object-fit:cover;">
+            <div class="feature-icon" data-tone="violet">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="10" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+                <rect x="22" y="10" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+                <rect x="10" y="22" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 18v10a2 2 0 0 0 2 2h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M14 18v4a2 2 0 0 0 2 2h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Reason</p>
               <h5 class="mb-0">MITRE ATT&CK narratives</h5>
@@ -212,7 +275,12 @@ permalink: /
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="mint">
           <div class="d-flex align-items-center mb-3 feature-meta">
-            <img src="/assets/images/4.jpg" alt="Remediation steps" style="width:68px;height:68px;object-fit:cover;">
+            <div class="feature-icon" data-tone="mint">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 8l12 6v8c0 8-6 12-12 14-6-2-12-6-12-14v-8l12-6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M14 21l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Act</p>
               <h5 class="mb-0">Actionable remediation</h5>
@@ -224,7 +292,15 @@ permalink: /
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="amber">
           <div class="d-flex align-items-center mb-3 feature-meta">
-            <img src="/assets/images/5.jpg" alt="Reporting" style="width:68px;height:68px;object-fit:cover;">
+            <div class="feature-icon" data-tone="amber">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 8h12l6 6v18a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M26 8v6h6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M16 22h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 26h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 18h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Report</p>
               <h5 class="mb-0">Executive-grade outputs</h5>
@@ -236,7 +312,14 @@ permalink: /
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="rose">
           <div class="d-flex align-items-center mb-3 feature-meta">
-            <img src="/assets/images/6.jpg" alt="Human approvals" style="width:68px;height:68px;object-fit:cover;">
+            <div class="feature-icon" data-tone="rose">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="12" width="24" height="18" rx="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 22h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M22 24l4 4 6-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Assure</p>
               <h5 class="mb-0">Human-in-the-loop controls</h5>
