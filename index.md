@@ -33,8 +33,11 @@ permalink: /
   }
 
   .ai-capabilities-grid {
-    --bs-gutter-x: 2.5rem;
-    --bs-gutter-y: 2.5rem;
+    margin: -1.25rem;
+  }
+
+  .ai-capabilities-grid > [class*="col-"] {
+    padding: 1.25rem;
   }
 
   .ai-feature-card {
