@@ -6,7 +6,7 @@ permalink: /
 
 <style>
   .ai-hero {
-    background: radial-gradient(circle at 15% 20%, rgba(58, 125, 243, 0.4), transparent 60%), radial-gradient(circle at 80% 0%, rgba(66, 221, 195, 0.45), transparent 55%), linear-gradient(135deg, #060a1b, #101b3a 55%, #122345);
+    background: radial-gradient(circle at 15% 20%, rgba(110, 163, 255, 0.55), transparent 65%), radial-gradient(circle at 80% 0%, rgba(66, 221, 195, 0.45), transparent 55%), linear-gradient(135deg, #1a2e60, #0b1430 40%, #122345);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 32px;
     color: #f7fbff;
@@ -19,6 +19,10 @@ permalink: /
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+  }
+
+  .ai-hero .hero-cta {
+    gap: 1.5rem;
   }
 
   .ai-hero .btn-primary {
@@ -53,6 +57,14 @@ permalink: /
   .ai-feature-card img {
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .ai-feature-card .feature-meta {
+    gap: 1rem;
+  }
+
+  .ai-feature-card .feature-meta img {
+    margin-right: 0.5rem;
   }
 
   .ai-feature-card[data-accent="cyan"] {
@@ -120,7 +132,7 @@ permalink: /
         <span class="badge rounded-pill px-3 py-2 mb-3">Enterprise AI Security</span>
         <h1 class="display-5 mb-3">AgentSOC — the professional AI Tier‑1 SOC analyst for modern teams</h1>
         <p class="lead mb-4">AgentSOC triages every alert, correlates across telemetry, and pushes remediation to the SecOps stack without leaving your workflow.</p>
-        <div class="d-flex flex-column flex-sm-row gap-3">
+        <div class="d-flex flex-column flex-sm-row hero-cta">
           <a class="btn btn-primary btn-lg px-4" href="mailto:founder@stratoclo.com">Book a demo</a>
           <a class="btn btn-outline-light btn-lg px-4" href="/tech_notes">See the platform</a>
         </div>
@@ -163,7 +175,7 @@ permalink: /
     <div class="row g-4 ai-capabilities-grid">
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="cyan">
-          <div class="d-flex align-items-center mb-3">
+          <div class="d-flex align-items-center mb-3 feature-meta">
             <img src="/assets/images/1.jpg" alt="SIEM sources" style="width:68px;height:68px;object-fit:cover;">
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Ingest</p>
@@ -175,7 +187,7 @@ permalink: /
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="blue">
-          <div class="d-flex align-items-center mb-3">
+          <div class="d-flex align-items-center mb-3 feature-meta">
             <img src="/assets/images/2.jpg" alt="AI investigations" style="width:68px;height:68px;object-fit:cover;">
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Investigate</p>
@@ -187,7 +199,7 @@ permalink: /
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="violet">
-          <div class="d-flex align-items-center mb-3">
+          <div class="d-flex align-items-center mb-3 feature-meta">
             <img src="/assets/images/3.jpg" alt="ATT&CK mapping" style="width:68px;height:68px;object-fit:cover;">
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Reason</p>
@@ -199,7 +211,7 @@ permalink: /
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="mint">
-          <div class="d-flex align-items-center mb-3">
+          <div class="d-flex align-items-center mb-3 feature-meta">
             <img src="/assets/images/4.jpg" alt="Remediation steps" style="width:68px;height:68px;object-fit:cover;">
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Act</p>
@@ -211,7 +223,7 @@ permalink: /
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="amber">
-          <div class="d-flex align-items-center mb-3">
+          <div class="d-flex align-items-center mb-3 feature-meta">
             <img src="/assets/images/5.jpg" alt="Reporting" style="width:68px;height:68px;object-fit:cover;">
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Report</p>
@@ -223,7 +235,7 @@ permalink: /
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="ai-feature-card p-4" data-accent="rose">
-          <div class="d-flex align-items-center mb-3">
+          <div class="d-flex align-items-center mb-3 feature-meta">
             <img src="/assets/images/6.jpg" alt="Human approvals" style="width:68px;height:68px;object-fit:cover;">
             <div class="ms-3">
               <p class="text-uppercase small mb-1 text-white-50">Assure</p>
