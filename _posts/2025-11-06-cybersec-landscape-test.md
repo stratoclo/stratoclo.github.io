@@ -7,7 +7,31 @@ author: "Stratoclo"
 
 <div class="mermaid">
 graph LR
-  A[Start] --> B[Step 1]
-  B --> C[Step 2]
+
+  subgraph client
+    subgraph pc
+    BR[Browser]
+    end
+    subgraph mobile
+    MO[Mobile]
+    end
+  end
+
+  subgraph cloud
+    subgraph firewall
+    FW[Firewall]
+    end
+    subgraph VPC
+    WS[Webserver]
+    end
+    subgraph cloud_services
+    IAM[Identity Access Management]
+    end    
+  end
+
+  client -.-> firewall
+  FW -.-> WS
+  client -.-> IAM
+  
 </div>
 
