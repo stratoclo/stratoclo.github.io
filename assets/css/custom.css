@@ -1,0 +1,28 @@
+html,
+body {
+  font-family: "IBM Plex Sans", "Inter", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.navbar-brand {
+  font-family: "IBM Plex Sans", "Inter", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.btn-gradient {
+  background: linear-gradient(120deg, #5b7cfd, #49f0c6);
+  border: none;
+  color: #fff;
+  box-shadow: 0 10px 40px rgba(72, 184, 255, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-gradient:hover,
+.btn-gradient:focus {
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 15px 45px rgba(72, 184, 255, 0.35);
+}

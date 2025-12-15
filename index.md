@@ -25,12 +25,6 @@ permalink: /
     gap: 1.5rem;
   }
 
-  .ai-hero .btn-primary {
-    background: linear-gradient(120deg, #5b7cfd, #49f0c6);
-    border: none;
-    box-shadow: 0 10px 40px rgba(72, 184, 255, 0.25);
-  }
-
   .ai-hero .btn-outline-light {
     border-color: rgba(255, 255, 255, 0.4);
     color: #fff;
@@ -171,8 +165,8 @@ permalink: /
         <h1 class="display-5 mb-3">AgentSOC — the professional AI Tier‑1 SOC analyst for modern teams</h1>
         <p class="lead mb-4">AgentSOC triages every alert, correlates across telemetry, and pushes remediation to the SecOps stack without leaving your workflow.</p>
         <div class="d-flex flex-column flex-sm-row hero-cta">
-          <a class="btn btn-primary btn-lg px-4" href="mailto:founder@stratoclo.com">Book a demo</a>
-          <a class="btn btn-outline-light btn-lg px-4" href="/tech_notes">See the platform</a>
+          <a class="btn btn-primary btn-gradient btn-lg px-4" href="mailto:founder@stratoclo.com">Book a demo</a>
+          <a class="btn btn-primary btn-gradient btn-lg px-4" href="https://app.stratoclo.com/" target="_blank" rel="noopener">Launch console</a>
         </div>
       </div>
       <div class="col-lg-5 text-center">
