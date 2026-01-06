@@ -1,9 +1,9 @@
 ---
 layout: with_mermaid
-title: "Cyber Security Global"
+title: "Cyber Security Landscape"
 author: "Stratoclo"
 ---
-### Cyber Security Elements
+### Cyber Security Landscape
 <div class="mermaid">
 graph LR
 
