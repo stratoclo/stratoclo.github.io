@@ -1,6 +1,6 @@
 ---
 layout: with_mermaid
-title: "Cyber Security Landscape"
+title: "Cyber Security Components"
 author: "Stratoclo"
 ---
 ### Cyber Security Landscape
