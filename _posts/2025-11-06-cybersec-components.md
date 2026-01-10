@@ -4,6 +4,7 @@ title: "Cyber Security Components"
 author: "Stratoclo"
 ---
 ### Cyber Security Landscape
+
 <div class="mermaid">
 graph LR
 
@@ -11,61 +12,61 @@ graph LR
   classDef note fill:#FFF3B0,stroke:#D4A72C,stroke-width:1px,color:#111,font-size:10px;
   classDef cloudPanel fill:#F7FAFF,stroke:#C7D2E8,stroke-width:1px;
 
-  subgraph client
+  %% CLIENT
+  subgraph client["client"]
       PC[PC win/mac]
-      N_PC["Security monitoring"]
-      N_PC -.->  PC 
-      class N_PC note
       MO[Mobile]
-      N_MO["Security monitoring"]
-      N_MO -.-> MO
-      class N_MO note      
+
+      N_PC["Security monitoring"] -.-> PC
+      N_MO["Security monitoring"] -.-> MO
+
+      class N_PC note
+      class N_MO note
   end
 
-  subgraph "cloud-aws"
-    subgraph firewall
+  %% AWS
+  subgraph cloudAws["cloud-aws"]
+    subgraph firewall["firewall"]
       FW[Firewall]
-      N_FW["Security monitoring"]
-      N_FW -.-> FW
-      class N_FW note      
+      N_FW["Security monitoring"] -.-> FW
+      class N_FW note
     end
 
-    subgraph VPC
+    subgraph vpc["VPC"]
       WS[Webserver]
-      N_WS["Security monitoring"]
-      N_WS -.-> WS
-      class N_WS note
-
       AS[Application Server]
-      N_AS["Security monitoring"]
-      N_AS -.-> AS
-      class N_AS note
-
       DB[(DataBase Postgres)]
-      N_DB["Security monitoring"]
-      N_DB -.-> DB
+
+      N_WS["Security monitoring"] -.-> WS
+      N_AS["Security monitoring"] -.-> AS
+      N_DB["Security monitoring"] -.-> DB
+
+      class N_WS note
+      class N_AS note
       class N_DB note
     end
   end
 
-  subgraph "Azure AD"
+  %% AZURE AD
+  subgraph azureAd["Azure AD"]
     IAM[Identity Access Management]
-    N_IAM["Monitoring / sign-in logs"]
-    N_IAM -.-> IAM
+    N_IAM["Monitoring / sign-in logs"] -.-> IAM
     class N_IAM note
   end
 
-  %% Apply panel tint
-  class cloudPanel cloud-aws
+  %% Apply panel tint (works because cloudAws is a real ID)
+  class cloudAws cloudPanel
 
-  %% Traffic path
-  client -.-> FW
+  %% Traffic path (connect from actual nodes)
+  PC -.-> FW
+  MO -.-> FW
   FW -.-> WS
   WS --> AS
   AS --> DB
 
-  %% Auth path
-  client -.-> IAM
+  %% Auth path (connect from actual nodes)
+  PC -.-> IAM
+  MO -.-> IAM
   AS -.-> IAM
 
 </div>
